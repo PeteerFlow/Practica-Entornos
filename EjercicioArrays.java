@@ -22,22 +22,18 @@ public class EjercicioArrays {
         //Genera notas random entre 1 y 10
         for(int i=0; i < control.length; i++){
             control[i] = (int)(Math.random()*11);
-        }
-        //buscamos al mayor
+        }        
+        //buscamos al menor y al mayor
         postEval = 11;
-        for(int i=0; i<control.length; i++){
-            int preEval = control[i];
-            if (preEval < postEval){
-                minNota = preEval;
-                postEval = control[i];
-            }
-        }
-        //buscamos al menor
-        postEval = 0;
+        maxNota = 0;
         for(int i=0; i<control.length; i++){
             int preEval = control[i];
             if (preEval > postEval){
                 maxNota = preEval;
+                postEval = control[i];
+            }
+            if (preEval < postEval){
+                minNota = preEval;
                 postEval = control[i];
             }
         }
