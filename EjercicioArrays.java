@@ -47,12 +47,7 @@ public class EjercicioArrays {
         indMaxNota = notas.indexOf(maxNota) + 1;
 
         //Comprobamos el resultado del ejercicio   
-        System.out.println("Mínimo es: " + minNota);
-        System.out.println("Máximo es: " + maxNota);
-        System.out.println("Indice del mínimo es : " + indMinNota);
-        System.out.println("Indice del máximo es : " + indMaxNota);
-        System.out.println("Lista de clase :" + Arrays.toString(listaClase));
-        System.out.println("Array de Notas :" + notas);
+        resultado();
         
         //creamos el array de notas "practicas"
         practicas = new int[numAlumnos];
@@ -73,7 +68,7 @@ public class EjercicioArrays {
         //Sacamos la estadística de calificaciones
         //hacemos un array de 10 para la estadística.
         estadistica = new float[10];
-      
+    
         for (int i=0; i<10; i++){
             float count = 0;
             float sum = 0;
@@ -147,5 +142,13 @@ public class EjercicioArrays {
         System.out.println("Nota antigua alumno nº4: " + calif[3]); 
         calif[3] = 6;
         System.out.println("Nota nueva   alumno nº4: " + calif[3]);
+    }
+    public static void resultado(){
+        System.out.println("Mínimo es: " + minNota);
+        System.out.println("Máximo es: " + maxNota);
+        System.out.println("Indice del mínimo es : " + indMinNota);
+        System.out.println("Indice del máximo es : " + indMaxNota);
+        System.out.println("Lista de clase :" + Arrays.toString(listaClase));
+        System.out.println("Array de Notas :" + notas);
     }
 }
