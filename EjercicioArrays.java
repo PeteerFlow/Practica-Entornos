@@ -16,8 +16,7 @@ public class EjercicioArrays {
 		int[] suspensos;
         int maxNota = 0;
         int minNota = 0;
-        int indMaxNota, indMinNota;
-        int postEval;
+        int indMaxNota, indMinNota, postEval;
 		double[] calif;
         //Genera notas random entre 1 y 10
         for(int i=0; i < control.length; i++){
